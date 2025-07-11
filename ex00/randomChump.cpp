@@ -1,0 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/01 15:22:48 by cwolf             #+#    #+#             */
+/*   Updated: 2025/07/09 13:39:34 by cwolf            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "./Zombie.hpp"
+
+void randomChump(std::string name)  //erzeugt zombie auf dem stack, wird automatisch geloscht 
+{
+	Zombie z = Zombie(name);
+	z.announce();
+}
