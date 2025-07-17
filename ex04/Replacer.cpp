@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:33:50 by cwolf             #+#    #+#             */
-/*   Updated: 2025/07/09 14:03:45 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/07/17 14:31:13 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,16 @@ bool Replacer::process()
 		std::cerr << "Could not open input file.\n";
 		return false;
 	}
+	
+	std::string firstLine;
+	if (!std::getline(infile, firstLine))
+	{
+		std::cerr << "Input file is empty.\n";
+		return false;
+	}
+
+	infile.clear();
+	infile.seekg(0);
 	
 	std::ofstream outfile(_filename + ".replace");
 	if(!outfile)
