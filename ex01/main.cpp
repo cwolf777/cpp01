@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 17:23:12 by cwolf             #+#    #+#             */
-/*   Updated: 2025/07/09 14:12:56 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/07/17 13:56:43 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ int main()
 		horde[i].announce();
 	}
 
-	delete[] horde; //delete[] fuer arrays
+	delete[] horde;
 	return 0;
 }

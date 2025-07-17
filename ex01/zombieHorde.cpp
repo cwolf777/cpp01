@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 17:14:34 by cwolf             #+#    #+#             */
-/*   Updated: 2025/07/09 14:13:13 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/07/17 13:56:59 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie*	zombieHorde(int n, std::string name)
 	
 	Zombie* horde;
 	
-	horde = new Zombie[n];  //Konstruktor 
+	horde = new Zombie[n];
 	for(int i = 0; i < n; ++i)
 	{
 		horde[i].setName(name);
