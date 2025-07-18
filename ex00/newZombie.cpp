@@ -6,14 +6,14 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 15:21:00 by cwolf             #+#    #+#             */
-/*   Updated: 2025/07/09 11:06:40 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/07/18 10:06:49 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./Zombie.hpp"
 
-Zombie* newZombie(std::string name)  //zombie auf heap erzeugen barucht delete
+Zombie* newZombie(std::string name)
 {
 	Zombie* z = new Zombie(name);
-	return z;   //wegen new
+	return z;
 }
