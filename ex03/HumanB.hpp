@@ -6,7 +6,7 @@
 /*   By: cwolf <cwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 17:14:13 by cwolf             #+#    #+#             */
-/*   Updated: 2025/07/03 13:05:27 by cwolf            ###   ########.fr       */
+/*   Updated: 2025/07/18 10:56:52 by cwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ class HumanB
 		std::string _name;
 		Weapon* _weapon;
 	public:
-		HumanB(std::string name); //Konstruktor nur mit Name 
-		void setWeapon(Weapon& weapon); //_weapon = &weapon
-		void attack() const; //gleich nur wenn _weapon == nullptr "no weapon to attack with"
+		HumanB(std::string name);
+		void setWeapon(Weapon& weapon);
+		void attack() const;
 };
 
 #endif
